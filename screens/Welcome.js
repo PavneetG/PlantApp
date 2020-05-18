@@ -1,14 +1,24 @@
-import React, { Component } from 'react'
-import {Text, StyleSheet, View} from 'react-native'
+import React, { Component } from 'react';
+import {Text, StyleSheet, View} from 'react-native';
 
-import { Button, Block, Text } from '../components'
+import { Button, Block, Text } from '../components';
 
 export default class Welcome extends Component {
+    static navigationOptions = {
+        header: null,
+
+    }
     render() {
         return(
-            <View>
+            <Block center middle>
+                <Block center middle flex={0.3}>
+                    <Text h1 center bold>
+                    Your Home.
+                    <Text h1 primary>Greener,</Text>
+                    </Text> 
+                </Block>
                 <Text>Welcome</Text>
-            </View>
+            </Block>
         )
     }
 }

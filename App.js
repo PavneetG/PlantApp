@@ -54,18 +54,13 @@ export default class App extends React.Component{
       )
     }
     return (
-      <View style={StyleSheet.container}>
+      <Block>
         <Navigation/>
-      </View>
+      </Block>
     );
   }
 }
 
 const styles = StyleSheet({
-  constants: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  
 });
