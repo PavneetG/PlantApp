@@ -1,19 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {Image} from 'react-native'
+import { createAppContainer, createStackNavigator } from 'react-navigation';
+import Welcome from '../PlantApp/screens/Welcome'
+import Login from '../PlantApp/screens/Login'
+import Browse from '../PlantApp/screens/Browse'
+import Explore from '../PlantApp/screens/Explore'
+import Settings from '../PlantApp/screens/Settings'
+import Product from '../PlantApp/screens/Product'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+import {theme} from '../PlantApp/constants'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const screens = createStackNavigator({
+  Welcome,
+  Login,
+  Explore,
+  Browse,
+  Product,
+  Settings,
+}, {
+  defaultNavigationOptions: {
+    headerStyle: {}, 
+    headerBlackImage: <Image/>,
+    headerBlackTitle: null,
+    headerLeftContainerStyle: {}, 
+    headerRightContainerStyle: {}, 
+  }
 });
+
+export default createAppContainer(screens);
