@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 import { Button, Block, Text } from '../components';
 
@@ -10,14 +10,17 @@ export default class Welcome extends Component {
     }
     render() {
         return(
-            <Block center middle>
+            <Block>
                 <Block center middle flex={0.3}>
                     <Text h1 center bold>
-                    Your Home.
+                        Your Home.
                     <Text h1 primary>Greener,</Text>
                     </Text> 
+                    <Text h3 gray2>Enjoy the experience.</Text>
                 </Block>
-                <Text>Welcome</Text>
+                <Block>
+                    <Text>Welcome</Text>
+                </Block>
             </Block>
         )
     }

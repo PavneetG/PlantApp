@@ -10,7 +10,7 @@ import * as constants from './constants';
 const images = [
   require('./assets/icons/back.png'),
   require('./assets/icons/plants.png'),
-  require('./assets/icons/seed.png'),
+  require('./assets/icons/seeds.png'),
   require('./assets/icons/flowers.png'),
   require('./assets/icons/sprayers.png'),
   require('./assets/icons/pots.png'),

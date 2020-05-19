@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/native": "^5.4.0",
+    "@react-navigation/stack": "^5.3.7",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -21,6 +22,7 @@
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",
     "react-navigation": "^4.3.9",
+    "react-navigation-stack": "^2.5.1",
     "yarm": "^0.4.0"
   },
   "devDependencies": {
